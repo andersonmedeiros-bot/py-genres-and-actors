@@ -37,6 +37,9 @@ def main() -> QuerySet:
 
 
 if __name__ == "__main__":
-    import init_django
+    try:
+        __import__("init_django")
+    except ImportError:
+        pass
 
     main()
