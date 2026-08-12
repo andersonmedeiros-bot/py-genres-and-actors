@@ -1,6 +1,6 @@
+import init_django
 from django.db.models import QuerySet
 
-import init_django
 from db.models import Actor, Genre
 
 
