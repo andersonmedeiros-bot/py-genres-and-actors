@@ -1,10 +1,12 @@
-import init_django
 from django.db.models import QuerySet
 
+import init_django
 from db.models import Actor, Genre
 
 
 def main() -> QuerySet:
+    _ = init_django
+
     Genre.objects.create(name="Western")
     Genre.objects.create(name="Action")
     Genre.objects.create(name="Dramma")
